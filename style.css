@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter"
+}
+
+.parent {
+    width: 500px;
+    background-color: hsl(0, 0%, 12%);
+    margin: 50px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.parent .img {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.write {
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.write .one {
+    color: white;
+}
+
+.write .two {
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.links {
+    padding-left: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.links a {
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.links a:hover {
+    background-color: hsl(75, 94%, 57%);
+}
+
+.links a:focus {
+    outline: 2px solid hsl(75, 94%, 57%);
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .parent {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .parent .img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .write .one {
+        font-size: 1rem;
+    }
+
+    .write .two {
+        font-size: 0.875rem;
+    }
+
+    .links a {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .parent {
+        margin: 50px auto;
+    }
+
+    .write .one {
+        font-size: 1.5rem;
+    }
+
+    .links a {
+        font-size: 1.1rem;
+    }
+}
